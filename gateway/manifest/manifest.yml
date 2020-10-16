@@ -9,3 +9,7 @@ applications:
       - java_buildpack_offline
     services:
       - bet-eureka
+    env:
+      CF_TARGET: https://api.sys.betlab.local
+      JBP_CONFIG_SPRING_AUTO_RECONFIGURATION: '{enabled: false}'
+      SPRING_PROFILES_ACTIVE: cloud

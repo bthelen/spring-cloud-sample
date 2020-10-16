@@ -9,3 +9,6 @@ applications:
       - java_buildpack_offline
     services:
       - bet-eureka
+    env:
+      CF_TARGET: https://api.sys.betlab.local
+
